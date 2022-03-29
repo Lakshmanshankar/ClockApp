@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&family=Sansita+Swashed&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    width: 100vh;
+    height: 150vh;
+    font-family: "Sansita Swashed", cursive;
+    font-size: 60px;
+    padding-left: 20%;
+    padding-top: 10%;
+    color: rgba(255, 255, 255, 1);
+    display: block;
+}
+
+#linethrough {
+    width: 50vw;
+    height: 0.4px;
+    color: azure;
+}
+
+#breakthrough {
+    left: 50vw;
+    width: 100vw;
+    height: 0.4px;
+    background-color: black;
+}
+
+.bars {
+    display: inline;
+    width: 100vw;
+    height: 10vh;
+    background-color: rgba(204, 41, 0, 0.3);
+}
+
+.bars ul {
+    background-color: rgb(39, 18, 0);
+    padding: 2%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.bars ul li {
+    display: block;
+    padding: 0px 20px;
+}
+
+.bars ul li a {
+    font-family: sans-serif;
+    font-weight: 800;
+    text-decoration: solid;
+    font-size: 26px;
+    font-weight: 900;
+    color: white;
+    background-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.3px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+.bars ul li a:hover {
+    background-color: rgb(221, 207, 207);
+}
+
+.mainpage {
+    height: 150vh;
+    width: 100vw;
+    background: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url("./images/cluster.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.MyInfo {
+    padding-left: 9%;
+    position: absolute;
+    top: 70%;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: cornsilk;
+}
+
+.ReadMore {
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    width: 220px;
+    height: 35px;
+    font-size: 17px;
+    font-family: fantasy;
+    color: aliceblue;
+    background: transparent;
+    border: 0.7px solid rgba(250, 123, 77, 0.8);
+}
+
+.ReadMore:hover {
+    background-color: rgba(250, 123, 77, 0.8);
+    color: black;
+}
