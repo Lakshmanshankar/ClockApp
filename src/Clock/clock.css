@@ -1,0 +1,152 @@
+.ClockBase{
+    width: 100vw;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.InnerComp{
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    background:linear-gradient(120deg,rgba(255, 0, 162, 0.4),rgba(42, 201, 161, 0.4));
+    box-shadow:1px 1px 20px rgba(255, 131, 155, 0.4),-1px -1px 20px rgba(249, 126, 155, 0.5),inset 5px 5px 20px white,inset -5px -5px 20px white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Needle{
+    width: 10px;
+    height: 10px;
+    background: black;
+    border: 0px solid rgba(18, 18, 18,0.4);
+    border-radius: 50%;
+    z-index: 99;
+}
+  .WidthHeight{
+    position: absolute;
+    width: 4px;
+    height: 13rem;
+    background: transparent;
+    border: 0px solid rgba(18, 18, 18,0.4);
+    border-top-width: 1rem;
+    border-top-color:rgb(0, 255, 174);
+    border-bottom-width: 1rem;
+    border-bottom-color:rgb(247, 19, 34);
+    z-index: 99;
+  }
+.LeftRight{
+    position: absolute;
+    width: 4px;
+    height: 12.9rem;
+    margin-right: 3.3px;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    background: transparent;
+    border: 0px solid rgba(18, 18, 18,0.4);
+    border-top-width: 1rem;
+    border-top-color:rgb(0, 255, 174);
+    border-bottom-width: 1rem;
+    border-bottom-color:rgb(236, 0, 79);
+    z-index: 99;
+}
+.Heading{
+    
+    position: absolute;
+    top: 20%;
+    font-size: 12px;
+    font-weight: 900;
+    background: rgb(255, 255, 255);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.2px;
+    -webkit-text-stroke-color: black;
+    z-index: 99;
+}
+.Hour-hand{
+    margin-left: 0%;
+    margin-top:calc(-63px);
+    margin-bottom: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0.35rem;
+    height: 4.5rem;
+    transform-origin: bottom;
+    border: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: linear-gradient(120deg,rgba(0, 0, 0, 0.85),rgba(0, 0, 0, 0.94));
+}
+.Min-hand{
+    margin-left: 0px;
+    margin-top:calc(-86px);
+    margin-bottom: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0.25rem;
+    height: 6rem;
+    transform-origin: bottom;
+    border: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background:rgb(0, 0, 0);
+}
+.Sec-hand{
+    margin-left: 0px;
+    margin-top:calc(-86px);
+    margin-bottom: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0.15rem;
+    height: 6rem;
+    transform-origin: bottom;
+    border: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background:rgba(224, 105, 105, 0.7);
+}
+
+@media screen and (max-width:600px){
+    .InnerComp{
+        width: 10rem;
+        height: 10rem;
+    }
+    .Needle{
+        width: 5px;
+        height: 5px;
+        background: white;
+    }
+    .Hour-hand{
+        margin-left:0.5px;
+        margin-top:calc(-35px);
+        width: 5px;
+        height: 2.5rem;
+        border-radius: 4px;
+    }
+    .Min-hand{
+        width: 3px;
+        height: 3.25rem;
+        margin-left: 0px;
+        margin-top:calc(-43px);
+    }
+    .Sec-hand{
+        width: 2px;
+        height: 4.23rem;
+        margin-top:calc(-60px);
+    }
+    .WidthHeight{
+        height: 8rem;
+    }
+    .LeftRight{
+        height: 8rem;
+    }
+
+}
